@@ -1,0 +1,112 @@
+# Site settings
+title: JiangKun Blog
+SEOTitle: 江昆的博客 | JiangKun Blog
+header-img: img/post-bg-desk.jpg
+email: 1723442668@qq.com
+description: "Every failure is leading towards success."
+keyword: "JK, JK Blog, 江昆的博客, zhangjiangkun, 张江昆, iOS, Apple, iPhone"
+url: "http://JiangKunZhang.github.io"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/JiangKunZhang/JiangKunZhang.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Goals determine what you going to be!"
+sidebar-avatar: /img/about-JK-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+weibo_username:     5814224678
+zhihu_username:     wei-ran-54-75
+github_username:    JiangKunZhang
+facebook_username:  JiangKunZ
+#csdn_name:          jiangkun0331
+#jianshu_username:   e71990ada2fd
+#twitter_username:   qiubaiying
+
+
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+# 评论系统
+# Disqus（https://disqus.com/）
+# disqus_username: qiubaiying
+
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: 543322aa92a5d3f55c17                            #生成的clientID
+  clientSecret: 4f68a6027536ebf021036a2d835130fdd72f5a60    #生成的clientSecret
+  repo: JiangKunZhang.github.io    #仓库名称
+  owner: JiangKunZhang    #github用户名
+  admin: JiangKunZhang
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+# 统计
+
+# Analytics settings
+# Baidu Analytics
+#ba_track_id: b50bf2b12b5338a1845e33832976fd68
+
+# Google Analytics
+#ga_track_id: 'UA-90855596-1'            # Format: UA-xxxxxx-xx
+#ga_domain: qiubaiying.top               # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "CSDN",
+        href: "https://me.csdn.net/jiangkun0331"
+    },{
+        title: "MI",
+        href: "https://www.mi.com/"
+    },{
+        title: "Apple",
+        href: "https://apple.com"
+    }
+]
