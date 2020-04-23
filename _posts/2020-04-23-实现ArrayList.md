@@ -4,7 +4,7 @@ title:      实现ArrayList
 subtitle:   实现ArrayList
 date:       2020-04-23
 author:     JiangKun
-header-img: img/post-bg-debug.jpeg
+header-img: img/post-bg-map.jpg
 catalog: true
 tags:
     - ArrayList
