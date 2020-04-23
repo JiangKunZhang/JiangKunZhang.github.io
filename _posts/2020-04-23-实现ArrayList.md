@@ -4,7 +4,7 @@ title:      实现ArrayList
 subtitle:   实现ArrayList
 date:       2020-04-23
 author:     JiangKun
-header-img: img/post-bg-coffee.jpeg
+header-img: img/post-bg-keybord.jpeg
 catalog: true
 tags:
     - ArrayList
@@ -31,46 +31,55 @@ tags:
 
 
 > 	//增加元素 	
-> public void add(int pos,int data) {}
 > 
+> public void add(int pos,int data) {}
+
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200423155302693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
 在增加元素的时候，先判断数组是否为满，如果是满的就需要进行扩容，再判断pos的位置是否合法，如果pos < 0 || pos > this.usedSize就说明pos不合法，此时不能添加，一切条件都允许添加之后，进行挪数据，往后挪一个，this.elem[i+1] = this.elem[i]当pos位置空出来，this.elem[pos] = value；添加完成后别忘记usedSize++;
 
 >  	//打印顺序表
->     public void display() {}
+> 
+>    public void display() {}
    
 打印顺序表就没什么好说的，遍历整个顺序表
 >    //判断顺序表当中是否包含某个元素
->     public boolean contains(int toFind) {}
+> 
+>    public boolean contains(int toFind) {}
 
 判断顺序表当中是否包含某个元素，也是遍历顺序表，找到返回true,否则返回false
 > //查找某个元素对应的位置
->     public int search(int toFind) {}
+> 
+>    public int search(int toFind) {}
 
 查找某个元素对应的位置,也是遍历顺序表，找到返回下标,否则返回-1
 >   //获取pos位置的元素
->     public int getPos(int pos) {}
+> 
+>    public int getPos(int pos) {}
 
 获取pos位置的元素的时候，如果顺序表为空，那么pos位置上肯定没有元素，就不用找了；如果不为空，判断pos的位置是否合法，如果pos < 0 || pos >= this.usedSize那么pos就不合法，注意这里和add有点不同，当插入的时候可以等于usedSize
 > //给pos位置的元素设置为value
->     public void setPos(int pos,int value) {}
+> 
+>    public void setPos(int pos,int value) {}
 
 给pos位置的元素设置为value前提是pos存在，如果pos < 0 || pos >= this.usedSize那么pos就不合法，否则进行替换 this.elem[pos] = value
  
 > //获取顺序表长度
->     public int size(){}
+> 
+>    public int size(){}
 
 直接返回this.usedSize
 
 >    //删除第一次出现的关键字toRomove
->     public void romove(int toRomove) {}
+> 
+>    public void romove(int toRomove) {}
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200423161941978.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
 
 删除关键字的时候先要拿到关键字的index,如果这个关键字不存在，就不用删除了，否则，将后面的元素每次往前挪一个，从this.usedSize - 1直到index，删除后别忘记this.usedSIze - 1
 
 > //清空顺序表
+> 
 > public void clear(){}
 
 直接让this.usedSize = 0;
@@ -84,7 +93,9 @@ import javax.management.RuntimeErrorException;
 
 /**
  * @author PineappleSnow
+
  * @version 1.0
+ 
  * @date 2020/4/19 15:56
  */
 public class MyArrayList {
