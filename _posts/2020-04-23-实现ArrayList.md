@@ -32,7 +32,7 @@ tags:
 
 > 	//增加元素 	
 > 
-> public void add(int pos,int data) {}
+>   public void add(int pos,int data) {}
 
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200423155302693.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
@@ -57,7 +57,7 @@ tags:
 > 
 >    public int getPos(int pos) {}
 
-获取pos位置的元素的时候，如果顺序表为空，那么pos位置上肯定没有元素，就不用找了；如果不为空，判断pos的位置是否合法，如果pos < 0 || pos >= this.usedSize那么pos就不合法，注意这里和add有点不同，当插入的时候可以等于usedSize
+获取pos位置的元素的时候，如果顺序表为空，那么pos位置上肯定没有元素，就不用找了.如果不为空，判断pos的位置是否合法，如果pos < 0 || pos >= this.usedSize那么pos就不合法，注意这里和add有点不同，当插入的时候可以等于usedSize
 > //给pos位置的元素设置为value
 > 
 >    public void setPos(int pos,int value) {}
