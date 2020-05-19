@@ -17,7 +17,8 @@ Java当中如何实现比较自定义类型的大小呢？
 **Comparable、Comparator、equals()**
 今天先学习Comparable Comparator
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200519151835307.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
-**Comparable接口**
+**1.Comparable接口**
+
 通过实现Comparable接口，重写CompareTo方法
 ```java
 class Student implements Comparable<Student>{
@@ -64,7 +65,8 @@ public class TestComparable {
 ```
 如果此时需要比较姓名的话，就需要重新实现CompareTo方法，**同时这也是使用Comparable这种方法的弊端，一旦在类中写死，就只能修改类內部，不够灵活**
 
-**Comparator接口**
+**2.Comparator接口**
+
 这个接口也被叫做**比较器**，先看具体的实现代码：
 
 ```java
@@ -170,7 +172,8 @@ public class TestComparator {
         System.out.println(Arrays.toString(people));
     }
 ```
-**小结**
+**3.小结**
+
 Java在做自定义类型的比较的时候，通过实现这两个接口来完成，具体的细节看需求
 **Comparable**
 
