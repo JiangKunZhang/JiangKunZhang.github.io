@@ -16,12 +16,7 @@ Java当中如何实现比较自定义类型的大小呢？
 在Java当中，自定义类型不可以通过`> < =`来比较，一般有3种方式来实现：
 **Comparable、Comparator、equals()**
 今天先学习Comparable Comparator
-| Comparable | Comparator |
-|--|--|
-|一般用于定义类的时候，实现该接口  | 一般用于定义某个比较器的同时实现该接口 |
-| 注意重写方法：compareTo |  注意重写方法：compare|
-|  优点：可以实现自定义类的比较方式| 优点：可以根据不同的需求，进行不同的排序方式 |
-|  缺点：排序方式固定，不够灵活| 缺点：必须自己建一个类进行排序 |
+![在这里插入图片描述](https://img-blog.csdnimg.cn/20200519151835307.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
 **Comparable接口**
 通过实现Comparable接口，重写CompareTo方法
 ```java
@@ -67,7 +62,7 @@ public class TestComparable {
     }
 }
 ```
-如果此时需要比较姓名的话，就需要重新实现CompareTo方法，**同时这也是使用Comparable这种方法的弊端，一旦在类中写死，就只能秀给类內部，不够灵活**
+如果此时需要比较姓名的话，就需要重新实现CompareTo方法，**同时这也是使用Comparable这种方法的弊端，一旦在类中写死，就只能修改类內部，不够灵活**
 
 **Comparator接口**
 这个接口也被叫做**比较器**，先看具体的实现代码：
