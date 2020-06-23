@@ -40,7 +40,7 @@ synchronized同步快对同一条线程来说是可重入的，不会出现自�
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020062021121374.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
 <font color = "red">Synchronized 修饰的同步代码块</font>是起到什么作用的。<font color = "red">让多个线程之间产生同步</font>
-怎么产生同步效果 <font color = "red">通过锁！</font>
+怎么产生同步效果 <font color = "red">通过锁！</font><br>
 
 <font color = "red">Synchronized 修饰方法</font>
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2020062021162014.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2ppYW5na3VuMDMzMQ==,size_16,color_FFFFFF,t_70)
